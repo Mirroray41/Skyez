@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "skyez:tempblock"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "skyez:tempitem"
+  }
+}
