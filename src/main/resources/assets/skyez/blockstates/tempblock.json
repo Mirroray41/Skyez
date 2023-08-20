@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "skyez:block/tempblock",
+      "x": 90
+    },
+    "facing=east": {
+      "model": "skyez:block/tempblock",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "skyez:block/tempblock"
+    },
+    "facing=south": {
+      "model": "skyez:block/tempblock",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "skyez:block/tempblock",
+      "x": 270
+    },
+    "facing=west": {
+      "model": "skyez:block/tempblock",
+      "y": 270
+    }
+  }
+}

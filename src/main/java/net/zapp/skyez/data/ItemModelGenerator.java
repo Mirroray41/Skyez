@@ -18,6 +18,7 @@ public class ItemModelGenerator extends ItemModelProvider {
     @Override
     protected void registerModels() {
         miscItem(ItemRegister.TEMPITEM);
+        miscItem(ItemRegister.COTTON_SEEDS);
     }
 
     private ItemModelBuilder miscItem(RegistryObject<Item> item) {

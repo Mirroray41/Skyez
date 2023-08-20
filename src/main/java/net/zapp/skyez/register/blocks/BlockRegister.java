@@ -11,6 +11,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.zapp.skyez.Skyez;
+import net.zapp.skyez.register.blocks.custom.BlockPlacer;
+import net.zapp.skyez.register.blocks.custom.CottonBlock;
 import net.zapp.skyez.register.items.ItemRegister;
 
 import java.util.function.Supplier;
@@ -20,13 +22,20 @@ public class BlockRegister {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Skyez.MOD_ID);
 
     public static final RegistryObject<Block> TEMPBLOCK = registerBlock("tempblock",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .strength(1f)));
+            () -> new BlockPlacer(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK)
+                    .strength(0.1f)));
+
+    public static final RegistryObject<Block> COTTON = registerBlockWithoutBlockItem("cotton",
+            () -> new CottonBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
     }
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {

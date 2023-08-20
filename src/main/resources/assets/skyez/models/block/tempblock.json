@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "skyez:block/tempblock2",
+    "side": "skyez:block/tempblock",
+    "top": "skyez:block/tempblock"
+  }
+}

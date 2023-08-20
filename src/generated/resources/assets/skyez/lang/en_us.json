@@ -1,4 +1,7 @@
 {
+  "block.skyez.cotton": "Cotton Plant",
   "block.skyez.tempblock": "Temp Block",
-  "item.skyez.tempitem": "Temp Item"
+  "item.skyez.cotton_seeds": "Cotton Seeds",
+  "item.skyez.tempitem": "Temp Item",
+  "itemtab.skyez_tab": "Skyez"
 }

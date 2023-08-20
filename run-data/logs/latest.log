@@ -1,27 +1,27 @@
-[09srp2023 13:46:21.978] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, /home/main/.gradle/caches/forge_gradle/assets, --gameDir, ., --fml.forgeVersion, 47.1.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, skyez, --all, --output, /home/main/Dokumenty/GitHub/Skyez/src/generated/resources, --existing, /home/main/Dokumenty/GitHub/Skyez/src/main/resources]
-[09srp2023 13:46:21.983] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Eclipse Adoptium; OS Linux arch amd64 version 6.4.7-200.fc38.x86_64
-[09srp2023 13:46:22.097] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[09srp2023 13:46:22.150] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/main/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23116!/ Service=ModLauncher Env=CLIENT
-[09srp2023 13:46:22.452] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/main/.gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.20.1-47.1.0/a2cd58d15791eaac9983e30be0995e66bd48633e/javafmllanguage-1.20.1-47.1.0.jar is missing mods.toml file
-[09srp2023 13:46:22.453] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/main/.gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.20.1-47.1.0/f1f11b7217b8320f1b3eb81c746b7b8a70a9ba06/lowcodelanguage-1.20.1-47.1.0.jar is missing mods.toml file
-[09srp2023 13:46:22.455] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/main/.gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.20.1-47.1.0/ff1b8eeb1bd00dfb130263b8952b931f5369252e/mclanguage-1.20.1-47.1.0.jar is missing mods.toml file
-[09srp2023 13:46:22.457] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/main/.gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.20.1-47.1.0/69ca36ae5b8d45c377a5485dc38a7343e5ebf33c/fmlcore-1.20.1-47.1.0.jar is missing mods.toml file
-[09srp2023 13:46:22.516] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[09srp2023 13:46:23.645] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, /home/main/.gradle/caches/forge_gradle/assets, --assetIndex, 5, --mod, skyez, --all, --output, /home/main/Dokumenty/GitHub/Skyez/src/generated/resources, --existing, /home/main/Dokumenty/GitHub/Skyez/src/main/resources]
-[09srp2023 13:46:23.936] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [skyez]
-[09srp2023 13:46:28.108] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.1.0, for MC 1.20.1 with MCP 20230612.114412
-[09srp2023 13:46:28.113] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.0 Initialized
-[09srp2023 13:46:28.686] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/main/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.0_mapped_official_1.20.1/forge-1.20.1-47.1.0_mapped_official_1.20.1-recomp.jar%23181!/assets/.mcassetsroot' uses unexpected schema
-[09srp2023 13:46:28.687] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/main/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.0_mapped_official_1.20.1/forge-1.20.1-47.1.0_mapped_official_1.20.1-recomp.jar%23181!/data/.mcassetsroot' uses unexpected schema
-[09srp2023 13:46:28.824] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[09srp2023 13:46:28.850] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 25 ms
-[09srp2023 13:46:28.850] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[09srp2023 13:46:28.878] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 27 ms
-[09srp2023 13:46:28.878] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: skyez
-[09srp2023 13:46:29.006] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: skyez finished after 128 ms
-[09srp2023 13:46:29.007] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: skyez
-[09srp2023 13:46:29.008] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: skyez finished after 0 ms
-[09srp2023 13:46:29.008] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: en_us
-[09srp2023 13:46:29.009] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: en_us finished after 1 ms
-[09srp2023 13:46:29.009] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 185 ms
-[09srp2023 13:46:29.015] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 10, old count: 9, new count: 11, removed stale: 0, written: 1
+[19srp2023 20:04:04.630] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, /home/main/.gradle/caches/forge_gradle/assets, --gameDir, ., --fml.forgeVersion, 47.1.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, skyez, --all, --output, /home/main/Dokumenty/GitHub/Skyez/src/generated/resources, --existing, /home/main/Dokumenty/GitHub/Skyez/src/main/resources]
+[19srp2023 20:04:04.635] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Eclipse Adoptium; OS Linux arch amd64 version 6.4.9-200.fc38.x86_64
+[19srp2023 20:04:04.743] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[19srp2023 20:04:04.790] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/main/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23116!/ Service=ModLauncher Env=CLIENT
+[19srp2023 20:04:05.038] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/main/.gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.20.1-47.1.0/a2cd58d15791eaac9983e30be0995e66bd48633e/javafmllanguage-1.20.1-47.1.0.jar is missing mods.toml file
+[19srp2023 20:04:05.040] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/main/.gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.20.1-47.1.0/f1f11b7217b8320f1b3eb81c746b7b8a70a9ba06/lowcodelanguage-1.20.1-47.1.0.jar is missing mods.toml file
+[19srp2023 20:04:05.041] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/main/.gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.20.1-47.1.0/ff1b8eeb1bd00dfb130263b8952b931f5369252e/mclanguage-1.20.1-47.1.0.jar is missing mods.toml file
+[19srp2023 20:04:05.042] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/main/.gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.20.1-47.1.0/69ca36ae5b8d45c377a5485dc38a7343e5ebf33c/fmlcore-1.20.1-47.1.0.jar is missing mods.toml file
+[19srp2023 20:04:05.093] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[19srp2023 20:04:06.102] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, /home/main/.gradle/caches/forge_gradle/assets, --assetIndex, 5, --mod, skyez, --all, --output, /home/main/Dokumenty/GitHub/Skyez/src/generated/resources, --existing, /home/main/Dokumenty/GitHub/Skyez/src/main/resources]
+[19srp2023 20:04:06.346] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [skyez]
+[19srp2023 20:04:09.996] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.1.0, for MC 1.20.1 with MCP 20230612.114412
+[19srp2023 20:04:10.000] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.0 Initialized
+[19srp2023 20:04:10.430] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/main/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.0_mapped_official_1.20.1/forge-1.20.1-47.1.0_mapped_official_1.20.1-recomp.jar%23181!/assets/.mcassetsroot' uses unexpected schema
+[19srp2023 20:04:10.431] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/main/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.0_mapped_official_1.20.1/forge-1.20.1-47.1.0_mapped_official_1.20.1-recomp.jar%23181!/data/.mcassetsroot' uses unexpected schema
+[19srp2023 20:04:10.588] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[19srp2023 20:04:10.629] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 40 ms
+[19srp2023 20:04:10.630] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[19srp2023 20:04:10.689] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 59 ms
+[19srp2023 20:04:10.689] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: skyez
+[19srp2023 20:04:10.689] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: skyez finished after 0 ms
+[19srp2023 20:04:10.690] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: skyez
+[19srp2023 20:04:10.700] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: skyez finished after 9 ms
+[19srp2023 20:04:10.700] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: en_us
+[19srp2023 20:04:10.701] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: en_us finished after 0 ms
+[19srp2023 20:04:10.701] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 113 ms
+[19srp2023 20:04:10.707] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 9, old count: 12, new count: 10, removed stale: 0, written: 0
