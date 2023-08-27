@@ -43,6 +43,28 @@ public class Skyez {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTab() == ItemTabRegister.SKYEZ_TAB.get()) {
             event.accept(ItemRegister.COTTON_SEEDS);
+            event.accept(ItemRegister.COTTON_BALL);
+            event.accept(ItemRegister.ACORN);
+            event.accept(ItemRegister.FINE_GRAVEL_DUST);
+            event.accept(BlockRegister.FINE_GRAVEL_BLOCK);
+
+            event.accept(ItemRegister.SMALL_COPPER_DUST);
+            event.accept(ItemRegister.SMALL_IRON_DUST);
+            event.accept(ItemRegister.SMALL_GOLD_DUST);
+            event.accept(ItemRegister.SMALL_GLOWSTONE_DUST);
+            event.accept(ItemRegister.SMALL_REDSTONE_DUST);
+            event.accept(ItemRegister.SMALL_NETHERITE_SCRAP_DUST);
+
+            event.accept(ItemRegister.COPPER_DUST);
+            event.accept(ItemRegister.IRON_DUST);
+            event.accept(ItemRegister.GOLD_DUST);
+            event.accept(ItemRegister.NETHERITE_SCRAP_DUST);
+
+            event.accept(ItemRegister.DIAMOND_SEED);
+            event.accept(ItemRegister.EMERALD_SEED);
+            event.accept(ItemRegister.LAPIS_LAZULI_SEED);
+            event.accept(ItemRegister.QUARTZ_SEED);
+            event.accept(ItemRegister.AMETHYST_SEED);
         }
     }
 

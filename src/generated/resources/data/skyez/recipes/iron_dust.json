@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skyez:small_iron_dust"
+    },
+    {
+      "item": "skyez:small_iron_dust"
+    },
+    {
+      "item": "skyez:small_iron_dust"
+    },
+    {
+      "item": "skyez:small_iron_dust"
+    },
+    {
+      "item": "skyez:small_iron_dust"
+    },
+    {
+      "item": "skyez:small_iron_dust"
+    },
+    {
+      "item": "skyez:small_iron_dust"
+    },
+    {
+      "item": "skyez:small_iron_dust"
+    },
+    {
+      "item": "skyez:small_iron_dust"
+    }
+  ],
+  "result": {
+    "item": "skyez:iron_dust"
+  }
+}

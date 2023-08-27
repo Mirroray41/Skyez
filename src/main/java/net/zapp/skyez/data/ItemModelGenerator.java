@@ -19,6 +19,27 @@ public class ItemModelGenerator extends ItemModelProvider {
     protected void registerModels() {
         miscItem(ItemRegister.TEMPITEM);
         miscItem(ItemRegister.COTTON_SEEDS);
+        miscItem(ItemRegister.COTTON_BALL);
+        miscItem(ItemRegister.ACORN);
+        miscItem(ItemRegister.FINE_GRAVEL_DUST);
+
+        miscItem(ItemRegister.SMALL_COPPER_DUST);
+        miscItem(ItemRegister.SMALL_IRON_DUST);
+        miscItem(ItemRegister.SMALL_GOLD_DUST);
+        miscItem(ItemRegister.SMALL_GLOWSTONE_DUST);
+        miscItem(ItemRegister.SMALL_REDSTONE_DUST);
+        miscItem(ItemRegister.SMALL_NETHERITE_SCRAP_DUST);
+
+        miscItem(ItemRegister.COPPER_DUST);
+        miscItem(ItemRegister.IRON_DUST);
+        miscItem(ItemRegister.GOLD_DUST);
+        miscItem(ItemRegister.NETHERITE_SCRAP_DUST);
+
+        miscItem(ItemRegister.DIAMOND_SEED);
+        miscItem(ItemRegister.EMERALD_SEED);
+        miscItem(ItemRegister.LAPIS_LAZULI_SEED);
+        miscItem(ItemRegister.QUARTZ_SEED);
+        miscItem(ItemRegister.AMETHYST_SEED);
     }
 
     private ItemModelBuilder miscItem(RegistryObject<Item> item) {

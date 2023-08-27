@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skyez:small_redstone_dust"
+    },
+    {
+      "item": "skyez:small_redstone_dust"
+    },
+    {
+      "item": "skyez:small_redstone_dust"
+    },
+    {
+      "item": "skyez:small_redstone_dust"
+    },
+    {
+      "item": "skyez:small_redstone_dust"
+    },
+    {
+      "item": "skyez:small_redstone_dust"
+    },
+    {
+      "item": "skyez:small_redstone_dust"
+    },
+    {
+      "item": "skyez:small_redstone_dust"
+    },
+    {
+      "item": "skyez:small_redstone_dust"
+    }
+  ],
+  "result": {
+    "item": "minecraft:redstone"
+  }
+}

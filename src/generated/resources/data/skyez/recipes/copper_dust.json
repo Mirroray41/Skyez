@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skyez:small_copper_dust"
+    },
+    {
+      "item": "skyez:small_copper_dust"
+    },
+    {
+      "item": "skyez:small_copper_dust"
+    },
+    {
+      "item": "skyez:small_copper_dust"
+    },
+    {
+      "item": "skyez:small_copper_dust"
+    },
+    {
+      "item": "skyez:small_copper_dust"
+    },
+    {
+      "item": "skyez:small_copper_dust"
+    },
+    {
+      "item": "skyez:small_copper_dust"
+    },
+    {
+      "item": "skyez:small_copper_dust"
+    }
+  ],
+  "result": {
+    "item": "skyez:copper_dust"
+  }
+}

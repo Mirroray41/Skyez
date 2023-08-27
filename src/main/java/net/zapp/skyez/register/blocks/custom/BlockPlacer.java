@@ -36,7 +36,7 @@ public class BlockPlacer extends DirectionalBlock {
             } else if (blockState.getValue(BlockStateProperties.FACING).toString().equals("up") && level.getBlockState(pos.above()) == Blocks.AIR.defaultBlockState()) {
                 level.setBlockAndUpdate(pos.above(), Blocks.STONE.defaultBlockState());
             }
-            return InteractionResult.PASS;
+            return InteractionResult.SUCCESS;
 
         }else {
             return InteractionResult.FAIL;

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skyez:small_netherite_scrap_dust"
+    },
+    {
+      "item": "skyez:small_netherite_scrap_dust"
+    },
+    {
+      "item": "skyez:small_netherite_scrap_dust"
+    },
+    {
+      "item": "skyez:small_netherite_scrap_dust"
+    },
+    {
+      "item": "skyez:small_netherite_scrap_dust"
+    },
+    {
+      "item": "skyez:small_netherite_scrap_dust"
+    },
+    {
+      "item": "skyez:small_netherite_scrap_dust"
+    },
+    {
+      "item": "skyez:small_netherite_scrap_dust"
+    },
+    {
+      "item": "skyez:small_netherite_scrap_dust"
+    }
+  ],
+  "result": {
+    "item": "skyez:netherite_scrap_dust"
+  }
+}

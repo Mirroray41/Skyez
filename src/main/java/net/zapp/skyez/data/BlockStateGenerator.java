@@ -16,6 +16,8 @@ public class BlockStateGenerator extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         //blockWithItem(BlockRegister.TEMPBLOCK);
+        blockWithItem(BlockRegister.FINE_GRAVEL_BLOCK);
+        //blockWithItem(BlockRegister.TEMPBLOCK2);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -3,8 +3,10 @@ package net.zapp.skyez.register.blocks;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.GravelBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -13,6 +15,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.zapp.skyez.Skyez;
 import net.zapp.skyez.register.blocks.custom.BlockPlacer;
 import net.zapp.skyez.register.blocks.custom.CottonBlock;
+import net.zapp.skyez.register.blocks.custom.Sieve;
 import net.zapp.skyez.register.items.ItemRegister;
 
 import java.util.function.Supplier;
@@ -25,8 +28,16 @@ public class BlockRegister {
             () -> new BlockPlacer(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK)
                     .strength(0.1f)));
 
+    public static final RegistryObject<Block> TEMPBLOCK2 = registerBlock("tempblock2",
+            () -> new Sieve(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(0.1f).noOcclusion()));
+
     public static final RegistryObject<Block> COTTON = registerBlockWithoutBlockItem("cotton",
             () -> new CottonBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    public static final RegistryObject<Block> FINE_GRAVEL_BLOCK = registerBlock("fine_gravel_block",
+            () -> new GravelBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
+                    .strength(0.1f)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skyez:netherite_scrap_dust"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "skyez:small_netherite_scrap_dust"
+  }
+}

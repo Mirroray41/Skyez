@@ -13,5 +13,6 @@ public class BlockRenderTypeRegister{
     @SubscribeEvent
     public static void register(FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(BlockRegister.COTTON.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegister.TEMPBLOCK2.get(), RenderType.cutout());
     }
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skyez:cotton_ball"
+    },
+    {
+      "item": "skyez:cotton_ball"
+    },
+    {
+      "item": "skyez:cotton_ball"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:string"
+  }
+}

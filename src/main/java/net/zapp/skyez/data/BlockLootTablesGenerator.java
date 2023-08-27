@@ -1,16 +1,22 @@
 package net.zapp.skyez.data;
 
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
+import net.minecraftforge.common.loot.LootTableIdCondition;
 import net.minecraftforge.registries.RegistryObject;
 import net.zapp.skyez.register.blocks.BlockRegister;
 import net.zapp.skyez.register.items.ItemRegister;
@@ -25,7 +31,10 @@ public class BlockLootTablesGenerator extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(BlockRegister.TEMPBLOCK.get());
-        dropSelf(BlockRegister.COTTON.get());
+        LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(BlockRegister.COTTON.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CropBlock.AGE, 5));
+        add(BlockRegister.COTTON.get(), (block) -> createCropDrops(block, ItemRegister.COTTON_BALL.get(), ItemRegister.COTTON_SEEDS.get(), lootitemcondition$builder1));
+        dropSelf(BlockRegister.FINE_GRAVEL_BLOCK.get());
+        dropSelf(BlockRegister.TEMPBLOCK2.get());
     }
 
     @Override

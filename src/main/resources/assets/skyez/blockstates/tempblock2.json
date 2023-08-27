@@ -1,0 +1,55 @@
+{
+  "variants": {
+    "stage=0": {
+      "model": "skyez:block/sieve0"
+    },
+    "stage=1": {
+      "model": "skyez:block/sieve1"
+    },
+    "stage=2": {
+      "model": "skyez:block/sieve2"
+    },
+    "stage=3": {
+      "model": "skyez:block/sieve3"
+    },
+    "stage=4": {
+      "model": "skyez:block/sieve4"
+    },
+    "stage=5": {
+      "model": "skyez:block/sieve5"
+    },
+    "stage=6": {
+      "model": "skyez:block/sieve6"
+    },
+    "stage=7": {
+      "model": "skyez:block/sieve7"
+    },
+    "stage=8": {
+      "model": "skyez:block/sieve8"
+    },
+    "stage=9": {
+      "model": "skyez:block/sieve9"
+    },
+    "stage=10": {
+      "model": "skyez:block/sieve10"
+    },
+    "stage=11": {
+      "model": "skyez:block/sieve11"
+    },
+    "stage=12": {
+      "model": "skyez:block/sieve12"
+    },
+    "stage=13": {
+      "model": "skyez:block/sieve13"
+    },
+    "stage=14": {
+      "model": "skyez:block/sieve14"
+    },
+    "stage=15": {
+      "model": "skyez:block/sieve15"
+    },
+    "stage=16": {
+      "model": "skyez:block/sieve16"
+    }
+  }
+}

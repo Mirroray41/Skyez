@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skyez:small_glowstone_dust"
+    },
+    {
+      "item": "skyez:small_glowstone_dust"
+    },
+    {
+      "item": "skyez:small_glowstone_dust"
+    },
+    {
+      "item": "skyez:small_glowstone_dust"
+    },
+    {
+      "item": "skyez:small_glowstone_dust"
+    },
+    {
+      "item": "skyez:small_glowstone_dust"
+    },
+    {
+      "item": "skyez:small_glowstone_dust"
+    },
+    {
+      "item": "skyez:small_glowstone_dust"
+    },
+    {
+      "item": "skyez:small_glowstone_dust"
+    }
+  ],
+  "result": {
+    "item": "minecraft:glowstone_dust"
+  }
+}

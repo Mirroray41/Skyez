@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skyez:fine_gravel_dust"
+    },
+    {
+      "item": "skyez:fine_gravel_dust"
+    },
+    {
+      "item": "skyez:fine_gravel_dust"
+    },
+    {
+      "item": "skyez:fine_gravel_dust"
+    }
+  ],
+  "result": {
+    "item": "skyez:fine_gravel_block"
+  }
+}
