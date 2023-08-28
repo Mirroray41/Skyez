@@ -35,6 +35,7 @@ public class BlockLootTablesGenerator extends BlockLootSubProvider {
         add(BlockRegister.COTTON.get(), (block) -> createCropDrops(block, ItemRegister.COTTON_BALL.get(), ItemRegister.COTTON_SEEDS.get(), lootitemcondition$builder1));
         dropSelf(BlockRegister.FINE_GRAVEL_BLOCK.get());
         dropSelf(BlockRegister.TEMPBLOCK2.get());
+        dropSelf(BlockRegister.TEMPBLOCK3.get());
     }
 
     @Override

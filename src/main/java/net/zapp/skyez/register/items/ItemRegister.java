@@ -63,6 +63,21 @@ public class ItemRegister {
     public static final RegistryObject<Item> AMETHYST_SEED = ITEMS.register("amethyst_seed",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> NETHERITE_BLEND = ITEMS.register("netherite_blend",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> DIRTY_SMALL_COPPER_DUST = ITEMS.register("dirty_small_copper_dust",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DIRTY_SMALL_GOLD_DUST = ITEMS.register("dirty_small_gold_dust",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DIRTY_SMALL_GLOWSTONE_DUST = ITEMS.register("dirty_small_glowstone_dust",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DIRTY_SMALL_NETHERITE_SCRAP_DUST = ITEMS.register("dirty_small_netherite_scrap_dust",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> STONE_SQUEEGEE = ITEMS.register("stone_squeegee",
+            () -> new Item(new Item.Properties().durability(40)));
+
 
 
 

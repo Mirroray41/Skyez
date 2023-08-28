@@ -65,6 +65,15 @@ public class Skyez {
             event.accept(ItemRegister.LAPIS_LAZULI_SEED);
             event.accept(ItemRegister.QUARTZ_SEED);
             event.accept(ItemRegister.AMETHYST_SEED);
+
+            event.accept(ItemRegister.NETHERITE_BLEND);
+
+            event.accept(ItemRegister.DIRTY_SMALL_COPPER_DUST);
+            event.accept(ItemRegister.DIRTY_SMALL_GOLD_DUST);
+            event.accept(ItemRegister.DIRTY_SMALL_GLOWSTONE_DUST);
+            event.accept(ItemRegister.DIRTY_SMALL_NETHERITE_SCRAP_DUST);
+
+            event.accept(ItemRegister.STONE_SQUEEGEE);
         }
     }
 

@@ -4,7 +4,10 @@ import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.zapp.skyez.Skyez;
@@ -79,6 +82,21 @@ public class RecipeGenerator extends RecipeProvider implements IConditionBuilder
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ItemRegister.NETHERITE_SCRAP_DUST.get()).requires(ItemRegister.SMALL_NETHERITE_SCRAP_DUST.get(), 9)
                 .unlockedBy("has_small_netherite_scrap_dust", inventoryTrigger(ItemPredicate.Builder.item().of(ItemRegister.SMALL_NETHERITE_SCRAP_DUST.get()).build()))
                 .save(consumer);
+        smelt(consumer, ItemRegister.COPPER_DUST.get(), RecipeCategory.MISC, Items.COPPER_INGOT, 0.1F, 200, "small_copper_dust");
+        smelt(consumer, ItemRegister.IRON_DUST.get(), RecipeCategory.MISC, Items.IRON_INGOT, 0.1F, 200, "small_iron_dust");
+        smelt(consumer, ItemRegister.GOLD_DUST.get(), RecipeCategory.MISC, Items.GOLD_INGOT, 0.1F, 200, "small_gold_dust");
+        smelt(consumer, ItemRegister.NETHERITE_BLEND.get(), RecipeCategory.MISC, Items.NETHERITE_INGOT, 0.1F, 200, "netherite_blend");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemRegister.STONE_SQUEEGEE.get())
+                .define('S', Items.COBBLESTONE)
+                .define('W', Items.OAK_PLANKS)
+                .define('X', Items.STICK)
+                .pattern("   ")
+                .pattern("XWX")
+                .pattern("SSS")
+                .unlockedBy("has_cobblestone", inventoryTrigger(ItemPredicate.Builder.item().of(Items.COBBLESTONE).build()))
+                .save(consumer);
+
     }
 
 
@@ -96,5 +114,23 @@ public class RecipeGenerator extends RecipeProvider implements IConditionBuilder
                 .save(p_250423_, new ResourceLocation(Skyez.MOD_ID, p_252237_));
         ShapedRecipeBuilder.shaped(p_248977_, p_251911_).define('#', p_250042_).pattern("###").pattern("###").pattern("###").group(p_248641_)
                 .unlockedBy(getHasName(p_250042_), has(p_250042_)).save(p_250423_, new ResourceLocation(Skyez.MOD_ID, p_250475_));
+    }
+
+    public void smelt(Consumer<FinishedRecipe> finishedRecipe, ItemLike in, RecipeCategory recipeCategory, ItemLike out, float exp, int time, String name) {
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(in), recipeCategory, out, exp, time)
+                .unlockedBy("has_item", has(in)).save(finishedRecipe, new ResourceLocation(Skyez.MOD_ID ,name + "_smelt"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(in), recipeCategory, out, exp, time/2)
+                .unlockedBy("has_item", has(in)).save(finishedRecipe, new ResourceLocation(Skyez.MOD_ID ,name + "_blast"));
+    }
+
+    public void blast_only(Consumer<FinishedRecipe> finishedRecipe, ItemLike in, RecipeCategory recipeCategory, ItemLike out, float exp, int time, String name) {
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(in), recipeCategory, out, exp, time)
+                .unlockedBy("has_item", has(in)).save(finishedRecipe, new ResourceLocation(Skyez.MOD_ID ,name + "_blast"));
+    }
+    public void cook(Consumer<FinishedRecipe> finishedRecipe, ItemLike in, RecipeCategory recipeCategory, ItemLike out, float exp, int time, String name) {
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(in), recipeCategory ,out, exp, time)
+                .unlockedBy("has_item", has(in)).save(finishedRecipe, new ResourceLocation(Skyez.MOD_ID ,name + "_smelt"));
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(in), recipeCategory, out, exp, time/2)
+                .unlockedBy("has_item", has(in)).save(finishedRecipe, new ResourceLocation(Skyez.MOD_ID ,name + "_smoke"));
     }
 }

@@ -1,5 +1,6 @@
-// 1.20.1	2023-08-27T13:33:10.724434313	Loot Tables
+// 1.20.1	2023-08-28T11:54:27.545224907	Loot Tables
 a05d498cb845bdb375269002c7f27d003ec2cfb7 data/skyez/loot_tables/blocks/cotton.json
 4713db256d588c0078277e231f273d6de0a8cbcd data/skyez/loot_tables/blocks/fine_gravel_block.json
 5f2c8b2d4a5337d6c306e8933b942f5350ba6795 data/skyez/loot_tables/blocks/tempblock.json
 4700eebf962b80622ae14d0556255da8a90590e4 data/skyez/loot_tables/blocks/tempblock2.json
+9878a3470baf750e5e763110f8cded33cd692248 data/skyez/loot_tables/blocks/tempblock3.json

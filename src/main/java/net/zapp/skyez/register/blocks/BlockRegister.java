@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.zapp.skyez.Skyez;
 import net.zapp.skyez.register.blocks.custom.BlockPlacer;
+import net.zapp.skyez.register.blocks.custom.CoarseSieve;
 import net.zapp.skyez.register.blocks.custom.CottonBlock;
 import net.zapp.skyez.register.blocks.custom.Sieve;
 import net.zapp.skyez.register.items.ItemRegister;
@@ -30,6 +31,9 @@ public class BlockRegister {
 
     public static final RegistryObject<Block> TEMPBLOCK2 = registerBlock("tempblock2",
             () -> new Sieve(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(0.1f).noOcclusion()));
+    public static final RegistryObject<Block> TEMPBLOCK3 = registerBlock("tempblock3",
+            () -> new CoarseSieve(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(0.1f).noOcclusion()));
 
     public static final RegistryObject<Block> COTTON = registerBlockWithoutBlockItem("cotton",

@@ -40,6 +40,15 @@ public class ItemModelGenerator extends ItemModelProvider {
         miscItem(ItemRegister.LAPIS_LAZULI_SEED);
         miscItem(ItemRegister.QUARTZ_SEED);
         miscItem(ItemRegister.AMETHYST_SEED);
+
+        miscItem(ItemRegister.NETHERITE_BLEND);
+
+        miscItem(ItemRegister.DIRTY_SMALL_COPPER_DUST);
+        miscItem(ItemRegister.DIRTY_SMALL_GOLD_DUST);
+        miscItem(ItemRegister.DIRTY_SMALL_GLOWSTONE_DUST);
+        miscItem(ItemRegister.DIRTY_SMALL_NETHERITE_SCRAP_DUST);
+
+        toolItem(ItemRegister.STONE_SQUEEGEE);
     }
 
     private ItemModelBuilder miscItem(RegistryObject<Item> item) {

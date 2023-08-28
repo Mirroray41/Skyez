@@ -1,15 +1,20 @@
-// 1.20.1	2023-08-27T23:53:41.675014922	Item Models: skyez
+// 1.20.1	2023-08-28T22:30:41.164346328	Item Models: skyez
 8a4355b7a83f75b3e93a2169c6443feff0df800f assets/skyez/models/item/acorn.json
 2fe8284a39eea572709478c20aa1c32d6d2da03a assets/skyez/models/item/amethyst_seed.json
 b81e377b5dd76314c75c7c8ed8678a914e42f3a9 assets/skyez/models/item/copper_dust.json
 f53961f7713e7cf04f36e36cae43affc7da67646 assets/skyez/models/item/cotton_ball.json
 cb324681dc6573152dc8a710e1b9233b791a861a assets/skyez/models/item/cotton_seeds.json
 6e9a7a3d72fb48f26a1f88e7c4507fe31fd144b3 assets/skyez/models/item/diamond_seed.json
+120f4598f23d67b0b9a60eb3fa5d5c8b3d92a265 assets/skyez/models/item/dirty_small_copper_dust.json
+5211713bf4321c1d7e39f5796803f7d7789bb1eb assets/skyez/models/item/dirty_small_glowstone_dust.json
+da1bb52c9a9c4505988ff1f1d7c038d825bf39b3 assets/skyez/models/item/dirty_small_gold_dust.json
+30ebbf24ac8beaf8de4defcb6773fcb32c1624e3 assets/skyez/models/item/dirty_small_netherite_scrap_dust.json
 d99407fd70cbdf1f390e679c76dfd84bbc40ff4b assets/skyez/models/item/emerald_seed.json
 1a3e0f4964e133c64ed1e737ea301d5c7d290dca assets/skyez/models/item/fine_gravel_dust.json
 27f5203e39273061fa6f7de5e9549dba9591fa8e assets/skyez/models/item/gold_dust.json
 7f23ad531e0b787028ea098719f6fd17b55f63f4 assets/skyez/models/item/iron_dust.json
 7f4e40668c26d4b56d7c6f479af1ca0b2f3392b8 assets/skyez/models/item/lapis_lazuli_seed.json
+94be5eab37a48721ae5316717c347f855f5be98a assets/skyez/models/item/netherite_blend.json
 669837636887986148cac1633d07214b8d2c1481 assets/skyez/models/item/netherite_scrap_dust.json
 e8267d0c4a29f151ecca17c86257a930461fd000 assets/skyez/models/item/quartz_seed.json
 fb2265b6533b326f8868a59372884e208587ff94 assets/skyez/models/item/small_copper_dust.json
@@ -18,4 +23,5 @@ e81832cd529e663e41d1e632790b932611b462f8 assets/skyez/models/item/small_gold_dus
 c9d22701b4b4ccc9a0943d64c3dfdde66b7bdad5 assets/skyez/models/item/small_iron_dust.json
 71762b2ce8661e13da55aad6ec8c20b470f68ba7 assets/skyez/models/item/small_netherite_scrap_dust.json
 e3ee677d3e1d98bf5eae3ed19652f3513a376ea9 assets/skyez/models/item/small_redstone_dust.json
+32b3938d8eee55a3835c3116e9d1d11d4f49ed6b assets/skyez/models/item/stone_squeegee.json
 09068b2f900048658bf611e6a394007a635597a4 assets/skyez/models/item/tempitem.json

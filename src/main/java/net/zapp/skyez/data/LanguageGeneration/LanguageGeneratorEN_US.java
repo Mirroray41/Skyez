@@ -1,6 +1,7 @@
 package net.zapp.skyez.data.LanguageGeneration;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.Item;
 import net.minecraftforge.common.data.LanguageProvider;
 import net.zapp.skyez.Skyez;
 import net.zapp.skyez.register.blocks.BlockRegister;
@@ -41,6 +42,17 @@ public class LanguageGeneratorEN_US extends LanguageProvider {
         add(ItemRegister.LAPIS_LAZULI_SEED.get(), "Lapis Lazuli Seed");
         add(ItemRegister.QUARTZ_SEED.get(), "Quartz Seed");
         add(ItemRegister.AMETHYST_SEED.get(), "Amethyst Seed");
+
+        add(ItemRegister.NETHERITE_BLEND.get(), "Netherite Blend");
+
+        add(ItemRegister.DIRTY_SMALL_COPPER_DUST.get(), "Dirty Small Copper Dust");
+        add(ItemRegister.DIRTY_SMALL_GOLD_DUST.get(), "Dirty Small Gold Dust");
+        add(ItemRegister.DIRTY_SMALL_GLOWSTONE_DUST.get(), "Dirty Small Glowstone Dust");
+        add(ItemRegister.DIRTY_SMALL_NETHERITE_SCRAP_DUST.get(), "Dirty Small Netherite Scrap Dust");
+
+        add(BlockRegister.TEMPBLOCK3.get(), "Coarse Sieve");
+
+        add(ItemRegister.STONE_SQUEEGEE.get(), "Stone Squeegee");
 
         add("itemtab.skyez_tab","Skyez");
     }
