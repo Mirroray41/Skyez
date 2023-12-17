@@ -1,0 +1,10 @@
+{
+  "type": "skyez:add_item",
+  "conditions": [
+    {
+      "block": "minecraft:cobblestone",
+      "condition": "minecraft:block_state_property"
+    }
+  ],
+  "item": "minecraft:gravel"
+}

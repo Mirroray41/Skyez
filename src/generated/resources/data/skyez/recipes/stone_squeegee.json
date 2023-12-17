@@ -3,19 +3,19 @@
   "category": "misc",
   "key": {
     "S": {
-      "item": "minecraft:cobblestone"
+      "item": "minecraft:stick"
     },
     "W": {
       "item": "minecraft:oak_planks"
     },
     "X": {
-      "item": "minecraft:stick"
+      "item": "minecraft:cobblestone"
     }
   },
   "pattern": [
     "   ",
-    "XWX",
-    "SSS"
+    "SWS",
+    "XXX"
   ],
   "result": {
     "item": "skyez:stone_squeegee"

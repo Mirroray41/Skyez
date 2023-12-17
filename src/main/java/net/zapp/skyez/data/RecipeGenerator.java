@@ -7,8 +7,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.zapp.skyez.Skyez;
 import net.zapp.skyez.register.blocks.BlockRegister;
@@ -87,16 +87,80 @@ public class RecipeGenerator extends RecipeProvider implements IConditionBuilder
         smelt(consumer, ItemRegister.GOLD_DUST.get(), RecipeCategory.MISC, Items.GOLD_INGOT, 0.1F, 200, "small_gold_dust");
         smelt(consumer, ItemRegister.NETHERITE_BLEND.get(), RecipeCategory.MISC, Items.NETHERITE_INGOT, 0.1F, 200, "netherite_blend");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemRegister.STONE_SQUEEGEE.get())
-                .define('S', Items.COBBLESTONE)
-                .define('W', Items.OAK_PLANKS)
-                .define('X', Items.STICK)
-                .pattern("   ")
-                .pattern("XWX")
-                .pattern("SSS")
-                .unlockedBy("has_cobblestone", inventoryTrigger(ItemPredicate.Builder.item().of(Items.COBBLESTONE).build()))
+        squeegee(Items.OAK_PLANKS, ItemRegister.WOODEN_SQUEEGEE.get(), consumer);
+        squeegee(Items.COBBLESTONE, ItemRegister.STONE_SQUEEGEE.get(), consumer);
+        squeegee(Items.IRON_INGOT, ItemRegister.IRON_SQUEEGEE.get(), consumer);
+        squeegee(Items.GOLD_INGOT, ItemRegister.GOLDEN_SQUEEGEE.get(), consumer);
+        squeegee(Items.DIAMOND, ItemRegister.DIAMOND_SQUEEGEE.get(), consumer);
+
+        netheriteSmithing(consumer, ItemRegister.DIAMOND_SQUEEGEE.get(), RecipeCategory.MISC,ItemRegister.NETHERITE_SQUEEGEE.get());
+
+        hammer(Items.OAK_PLANKS, ItemRegister.WOODEN_HAMMER.get(), consumer);
+        hammer(Items.COBBLESTONE, ItemRegister.STONE_HAMMER.get(), consumer);
+        hammer(Items.IRON_INGOT, ItemRegister.IRON_HAMMER.get(), consumer);
+        hammer(Items.GOLD_INGOT, ItemRegister.GOLDEN_HAMMER.get(), consumer);
+        hammer(Items.DIAMOND, ItemRegister.DIAMOND_HAMMER.get(), consumer);
+
+        netheriteSmithing(consumer, ItemRegister.DIAMOND_HAMMER.get(), RecipeCategory.MISC,ItemRegister.NETHERITE_HAMMER.get());
+
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemRegister.SIEVE_MESH.get())
+                .define('X', Items.STRING)
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .unlockedBy("has_cotton", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ItemRegister.COTTON_BALL.get()).build()))
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegister.SIEVE.get())
+                .define('X', ItemRegister.SIEVE_MESH.get())
+                .define('W', Items.STRIPPED_OAK_WOOD)
+                .define('S', Items.STICK)
+                .pattern("WXW")
+                .pattern("W W")
+                .pattern("S S")
+                .unlockedBy("has_wood", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Blocks.OAK_LOG).build()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BlockRegister.COARSE_SIEVE.get())
+                .define('X', ItemRegister.COARSE_SIEVE_MESH.get())
+                .define('W', Items.OAK_WOOD)
+                .define('S', Items.STICK)
+                .pattern("WXW")
+                .pattern("W W")
+                .pattern("S S")
+                .unlockedBy("has_sieve", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(BlockRegister.SIEVE.get()).build()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemRegister.COARSE_SIEVE_MESH.get())
+                .define('X', ItemRegister.SIEVE_MESH.get())
+                .pattern("XX")
+                .pattern("XX")
+                .unlockedBy("has_mesh", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ItemRegister.SIEVE_MESH.get()).build()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.SAND)
+                .define('X', ItemRegister.SILICON.get())
+                .define('Y', ItemRegister.FINE_GRAVEL_DUST.get())
+                .pattern("XY")
+                .pattern("YX")
+                .unlockedBy("has_fine_gravel", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ItemRegister.FINE_GRAVEL_DUST.get()).build()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.DIRT)
+                .define('X', Items.SAND)
+                .define('Y', Items.OAK_SAPLING)
+                .pattern("XY")
+                .pattern("YX")
+                .unlockedBy("has_sand", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.SAND).build()))
+                .save(consumer);
     }
 
 
@@ -133,4 +197,26 @@ public class RecipeGenerator extends RecipeProvider implements IConditionBuilder
         SimpleCookingRecipeBuilder.smoking(Ingredient.of(in), recipeCategory, out, exp, time/2)
                 .unlockedBy("has_item", has(in)).save(finishedRecipe, new ResourceLocation(Skyez.MOD_ID ,name + "_smoke"));
     }
+
+    public void squeegee(Item itemin,Item out, Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, out)
+                .define('X', itemin)
+                .define('W', Items.OAK_PLANKS)
+                .define('S', Items.STICK)
+                .pattern("   ")
+                .pattern("SWS")
+                .pattern("XXX")
+                .unlockedBy("has_sieve", inventoryTrigger(ItemPredicate.Builder.item().of(BlockRegister.SIEVE.get()).build()))
+                .save(consumer);
+    }
+    public void hammer(Item itemin,Item out, Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, out)
+                .define('X', itemin)
+                .define('S', Items.STICK)
+                .pattern("XX ")
+                .pattern("XSX")
+                .pattern("SXX")
+                .unlockedBy("has_sieve", inventoryTrigger(ItemPredicate.Builder.item().of(BlockRegister.SIEVE.get()).build()))
+                .save(consumer);
+        }
 }

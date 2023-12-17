@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cobblestone": {
+    "has_sieve": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:cobblestone"
+              "skyez:sieve"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cobblestone",
+      "has_sieve",
       "has_the_recipe"
     ]
   ],

@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.zapp.skyez.modifier.loot.LootModifierRegister;
 import net.zapp.skyez.register.blocks.BlockRegister;
 import net.zapp.skyez.register.items.ItemRegister;
 import net.zapp.skyez.register.itemtab.ItemTabRegister;
@@ -28,6 +29,7 @@ public class Skyez {
         ItemRegister.register(modEventBus);
         BlockRegister.register(modEventBus);
         ItemTabRegister.register(modEventBus);
+        LootModifierRegister.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -66,6 +68,8 @@ public class Skyez {
             event.accept(ItemRegister.QUARTZ_SEED);
             event.accept(ItemRegister.AMETHYST_SEED);
 
+            event.accept(ItemRegister.SILICON);
+
             event.accept(ItemRegister.NETHERITE_BLEND);
 
             event.accept(ItemRegister.DIRTY_SMALL_COPPER_DUST);
@@ -73,7 +77,25 @@ public class Skyez {
             event.accept(ItemRegister.DIRTY_SMALL_GLOWSTONE_DUST);
             event.accept(ItemRegister.DIRTY_SMALL_NETHERITE_SCRAP_DUST);
 
+            event.accept(ItemRegister.WOODEN_SQUEEGEE);
             event.accept(ItemRegister.STONE_SQUEEGEE);
+            event.accept(ItemRegister.IRON_SQUEEGEE);
+            event.accept(ItemRegister.GOLDEN_SQUEEGEE);
+            event.accept(ItemRegister.DIAMOND_SQUEEGEE);
+            event.accept(ItemRegister.NETHERITE_SQUEEGEE);
+
+            event.accept(ItemRegister.WOODEN_HAMMER);
+            event.accept(ItemRegister.STONE_HAMMER);
+            event.accept(ItemRegister.IRON_HAMMER);
+            event.accept(ItemRegister.GOLDEN_HAMMER);
+            event.accept(ItemRegister.DIAMOND_HAMMER);
+            event.accept(ItemRegister.NETHERITE_HAMMER);
+
+            event.accept(BlockRegister.SIEVE);
+            event.accept(BlockRegister.COARSE_SIEVE);
+
+            event.accept(ItemRegister.SIEVE_MESH);
+            event.accept(ItemRegister.COARSE_SIEVE_MESH);
         }
     }
 

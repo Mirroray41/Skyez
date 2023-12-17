@@ -1,0 +1,14 @@
+{
+  "type": "skyez:add_item",
+  "conditions": [
+    {
+      "block": "minecraft:grass",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "chance": 0.3,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "skyez:cotton_seeds"
+}

@@ -14,15 +14,16 @@ public class CoarseSieve extends Sieve{
 
     @Override
     public void drops(BlockPos pos, Level level) {
-        genRandom(ItemRegister.DIRTY_SMALL_GOLD_DUST.get(), 0.5F, level, pos);
+        genRandom(ItemRegister.DIRTY_SMALL_GOLD_DUST.get(), 0.8F, level, pos);
         genRandom(ItemRegister.DIRTY_SMALL_GLOWSTONE_DUST.get(), 0.3F, level, pos);
-        genRandom(ItemRegister.DIRTY_SMALL_COPPER_DUST.get(), 1.2F, level, pos);
+        genRandom(ItemRegister.DIRTY_SMALL_COPPER_DUST.get(), 1.6F, level, pos);
         genRandom(ItemRegister.DIRTY_SMALL_NETHERITE_SCRAP_DUST.get(), 0.08F, level, pos);
-        genRandom(ItemRegister.DIAMOND_SEED.get(), 0.1F, level, pos);
+        genRandom(ItemRegister.DIAMOND_SEED.get(), 0.08F, level, pos);
         genRandom(ItemRegister.EMERALD_SEED.get(), 0.1F, level, pos);
         genRandom(ItemRegister.LAPIS_LAZULI_SEED.get(), 0.3F, level, pos);
         genRandom(ItemRegister.QUARTZ_SEED.get(), 0.2F, level, pos);
         genRandom(ItemRegister.AMETHYST_SEED.get(), 0.3F, level, pos);
+        genRandom(ItemRegister.SILICON.get(), 0.3F, level, pos);
     }
 
     @Override
@@ -32,7 +33,7 @@ public class CoarseSieve extends Sieve{
 
     @Override
     public Block getBaseBlock() {
-        return BlockRegister.TEMPBLOCK3.get();
+        return BlockRegister.COARSE_SIEVE.get();
     }
 }
 

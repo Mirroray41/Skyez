@@ -34,8 +34,8 @@ public class BlockLootTablesGenerator extends BlockLootSubProvider {
         LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(BlockRegister.COTTON.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CropBlock.AGE, 5));
         add(BlockRegister.COTTON.get(), (block) -> createCropDrops(block, ItemRegister.COTTON_BALL.get(), ItemRegister.COTTON_SEEDS.get(), lootitemcondition$builder1));
         dropSelf(BlockRegister.FINE_GRAVEL_BLOCK.get());
-        dropSelf(BlockRegister.TEMPBLOCK2.get());
-        dropSelf(BlockRegister.TEMPBLOCK3.get());
+        dropSelf(BlockRegister.SIEVE.get());
+        dropSelf(BlockRegister.COARSE_SIEVE.get());
     }
 
     @Override

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "skyez:item/coarse_sieve_mesh"
+  }
+}

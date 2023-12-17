@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "pattern": [
+    "XX ",
+    "XSX",
+    "SXX"
+  ],
+  "result": {
+    "item": "skyez:wooden_hammer"
+  },
+  "show_notification": true
+}

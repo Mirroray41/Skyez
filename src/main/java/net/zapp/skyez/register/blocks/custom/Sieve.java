@@ -1,7 +1,6 @@
 package net.zapp.skyez.register.blocks.custom;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -50,9 +49,9 @@ public class Sieve extends Block {
 
     public void drops(BlockPos pos, Level level) {
         genRandom(Items.FLINT, 0.5F, level, pos);
-        genRandom(ItemRegister.FINE_GRAVEL_DUST.get(), 1.5F, level, pos);
-        genRandom(ItemRegister.SMALL_IRON_DUST.get(), 0.3F, level, pos);
-        genRandom(ItemRegister.SMALL_REDSTONE_DUST.get(), 0.2F, level, pos);
+        genRandom(ItemRegister.FINE_GRAVEL_DUST.get(), 3F, level, pos);
+        genRandom(ItemRegister.SMALL_IRON_DUST.get(), 0.6F, level, pos);
+        genRandom(ItemRegister.SMALL_REDSTONE_DUST.get(), 0.3F, level, pos);
     }
 
     public Item getItem() {
@@ -60,7 +59,7 @@ public class Sieve extends Block {
     }
 
     public Block getBaseBlock() {
-        return BlockRegister.TEMPBLOCK2.get();
+        return BlockRegister.SIEVE.get();
     }
 
     public void rollBlockState(BlockState blockState, Level level, BlockPos pos, Player player) {
@@ -78,10 +77,19 @@ public class Sieve extends Block {
         }
     }
 
+    public boolean isSqueege(Player player) {
+        if (player.getItemInHand(InteractionHand.OFF_HAND).is(ItemRegister.WOODEN_SQUEEGEE.get())) { return true; }
+        else if (player.getItemInHand(InteractionHand.OFF_HAND).is(ItemRegister.STONE_SQUEEGEE.get())) { return true; }
+        else if (player.getItemInHand(InteractionHand.OFF_HAND).is(ItemRegister.IRON_SQUEEGEE.get())) { return true; }
+        else if (player.getItemInHand(InteractionHand.OFF_HAND).is(ItemRegister.GOLDEN_SQUEEGEE.get())) { return true; }
+        else if (player.getItemInHand(InteractionHand.OFF_HAND).is(ItemRegister.DIAMOND_SQUEEGEE.get())) { return true; }
+        else return player.getItemInHand(InteractionHand.OFF_HAND).is(ItemRegister.NETHERITE_SQUEEGEE.get());
+    }
+
     @Override
     public InteractionResult use(BlockState p_60503_, Level p_60504_, BlockPos p_60505_, Player p_60506_, InteractionHand p_60507_, BlockHitResult p_60508_) {
         if (!p_60504_.isClientSide()) {
-            if (p_60506_.getItemInHand(InteractionHand.OFF_HAND).is(ItemRegister.STONE_SQUEEGEE.get())) {
+            if (isSqueege(p_60506_)) {
                 if (!p_60506_.isCreative()) {
                     if (p_60506_.getItemInHand(InteractionHand.OFF_HAND).getDamageValue() < p_60506_.getItemInHand(InteractionHand.OFF_HAND).getMaxDamage()) {
                         p_60506_.getItemInHand(InteractionHand.OFF_HAND).setDamageValue(p_60506_.getItemInHand(InteractionHand.OFF_HAND).getDamageValue() + 1);

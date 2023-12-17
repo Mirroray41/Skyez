@@ -29,12 +29,12 @@ public class BlockRegister {
             () -> new BlockPlacer(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK)
                     .strength(0.1f)));
 
-    public static final RegistryObject<Block> TEMPBLOCK2 = registerBlock("tempblock2",
-            () -> new Sieve(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .strength(0.1f).noOcclusion()));
-    public static final RegistryObject<Block> TEMPBLOCK3 = registerBlock("tempblock3",
-            () -> new CoarseSieve(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .strength(0.1f).noOcclusion()));
+    public static final RegistryObject<Block> SIEVE = registerBlock("sieve",
+            () -> new Sieve(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .noOcclusion()));
+    public static final RegistryObject<Block> COARSE_SIEVE = registerBlock("coarse_sieve",
+            () -> new CoarseSieve(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .noOcclusion()));
 
     public static final RegistryObject<Block> COTTON = registerBlockWithoutBlockItem("cotton",
             () -> new CottonBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));

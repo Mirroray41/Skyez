@@ -41,6 +41,8 @@ public class ItemModelGenerator extends ItemModelProvider {
         miscItem(ItemRegister.QUARTZ_SEED);
         miscItem(ItemRegister.AMETHYST_SEED);
 
+        miscItem(ItemRegister.SILICON);
+
         miscItem(ItemRegister.NETHERITE_BLEND);
 
         miscItem(ItemRegister.DIRTY_SMALL_COPPER_DUST);
@@ -48,7 +50,22 @@ public class ItemModelGenerator extends ItemModelProvider {
         miscItem(ItemRegister.DIRTY_SMALL_GLOWSTONE_DUST);
         miscItem(ItemRegister.DIRTY_SMALL_NETHERITE_SCRAP_DUST);
 
+        toolItem(ItemRegister.WOODEN_SQUEEGEE);
         toolItem(ItemRegister.STONE_SQUEEGEE);
+        toolItem(ItemRegister.IRON_SQUEEGEE);
+        toolItem(ItemRegister.GOLDEN_SQUEEGEE);
+        toolItem(ItemRegister.DIAMOND_SQUEEGEE);
+        toolItem(ItemRegister.NETHERITE_SQUEEGEE);
+
+        toolItem(ItemRegister.WOODEN_HAMMER);
+        toolItem(ItemRegister.STONE_HAMMER);
+        toolItem(ItemRegister.IRON_HAMMER);
+        toolItem(ItemRegister.GOLDEN_HAMMER);
+        toolItem(ItemRegister.DIAMOND_HAMMER);
+        toolItem(ItemRegister.NETHERITE_HAMMER);
+
+        miscItem(ItemRegister.SIEVE_MESH);
+        miscItem(ItemRegister.COARSE_SIEVE_MESH);
     }
 
     private ItemModelBuilder miscItem(RegistryObject<Item> item) {

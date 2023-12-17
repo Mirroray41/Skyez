@@ -1,7 +1,6 @@
 package net.zapp.skyez.data.LanguageGeneration;
 
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.item.Item;
 import net.minecraftforge.common.data.LanguageProvider;
 import net.zapp.skyez.Skyez;
 import net.zapp.skyez.register.blocks.BlockRegister;
@@ -23,7 +22,11 @@ public class LanguageGeneratorEN_US extends LanguageProvider {
         add(ItemRegister.ACORN.get(), "Acorn");
         add(BlockRegister.FINE_GRAVEL_BLOCK.get(), "Fine Gravel");
         add(ItemRegister.FINE_GRAVEL_DUST.get(), "Fine Gravel Dust");
-        add(BlockRegister.TEMPBLOCK2.get(), "Sieve");
+
+
+
+        add(BlockRegister.COARSE_SIEVE.get(), "Coarse Sieve");
+        add(BlockRegister.SIEVE.get(), "Sieve");
 
         add(ItemRegister.SMALL_COPPER_DUST.get(), "Small Copper Dust");
         add(ItemRegister.SMALL_IRON_DUST.get(), "Small Iron Dust");
@@ -50,9 +53,24 @@ public class LanguageGeneratorEN_US extends LanguageProvider {
         add(ItemRegister.DIRTY_SMALL_GLOWSTONE_DUST.get(), "Dirty Small Glowstone Dust");
         add(ItemRegister.DIRTY_SMALL_NETHERITE_SCRAP_DUST.get(), "Dirty Small Netherite Scrap Dust");
 
-        add(BlockRegister.TEMPBLOCK3.get(), "Coarse Sieve");
+        add(ItemRegister.SILICON.get(), "Silicon");
 
+        add(ItemRegister.WOODEN_SQUEEGEE.get(), "Wooden Squeegee");
         add(ItemRegister.STONE_SQUEEGEE.get(), "Stone Squeegee");
+        add(ItemRegister.IRON_SQUEEGEE.get(), "Iron Squeegee");
+        add(ItemRegister.GOLDEN_SQUEEGEE.get(), "Golden Squeegee");
+        add(ItemRegister.DIAMOND_SQUEEGEE.get(), "Diamond Squeegee");
+        add(ItemRegister.NETHERITE_SQUEEGEE.get(), "Netherite Squeegee");
+
+        add(ItemRegister.WOODEN_HAMMER.get(), "Wooden Hammer");
+        add(ItemRegister.STONE_HAMMER.get(), "Stone Hammer");
+        add(ItemRegister.IRON_HAMMER.get(), "Iron Hammer");
+        add(ItemRegister.GOLDEN_HAMMER.get(), "Golden Hammer");
+        add(ItemRegister.DIAMOND_HAMMER.get(), "Diamond Hammer");
+        add(ItemRegister.NETHERITE_HAMMER.get(), "Netherite Hammer");
+
+        add(ItemRegister.SIEVE_MESH.get(), "Sieve Mesh");
+        add(ItemRegister.COARSE_SIEVE_MESH.get(), "Coarse Sieve Mesh");
 
         add("itemtab.skyez_tab","Skyez");
     }

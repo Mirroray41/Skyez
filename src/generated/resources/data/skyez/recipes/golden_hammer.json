@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "XX ",
+    "XSX",
+    "SXX"
+  ],
+  "result": {
+    "item": "skyez:golden_hammer"
+  },
+  "show_notification": true
+}
